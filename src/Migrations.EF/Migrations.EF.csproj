@@ -43,5 +43,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Migrations.Model\Migrations.Model.csproj">
+      <Project>{e0a3b39f-4c4b-4e88-bfab-c493f6b83312}</Project>
+      <Name>Migrations.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
