@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
-    <AssemblyName>Migrations.Model</AssemblyName>
+    <AssemblyName>Migrations.Core.Model</AssemblyName>
     <RootNamespace>Migrations.Model</RootNamespace>
   </PropertyGroup>
 

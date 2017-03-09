@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{DB4A6F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model", "src\Migrations.Model\Migrations.Model.csproj", "{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model.Tests.Integration", "src\Migrations.Model.Tests.Integration\Migrations.Model.Tests.Integration.csproj", "{C1EE439E-7B86-4BB9-9B31-86778F082FA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model.Core.Tests.Integration", "src\Migrations.Model.Core.Tests.Integration\Migrations.Model.Core.Tests.Integration.csproj", "{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,14 @@ Global
 		{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1EE439E-7B86-4BB9-9B31-86778F082FA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1EE439E-7B86-4BB9-9B31-86778F082FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1EE439E-7B86-4BB9-9B31-86778F082FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1EE439E-7B86-4BB9-9B31-86778F082FA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,5 +66,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{45170B12-8653-458F-9769-FA8701C21CA5} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
 		{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
+		{C1EE439E-7B86-4BB9-9B31-86778F082FA3} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
+		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
 	EndGlobalSection
 EndGlobal
