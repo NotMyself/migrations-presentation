@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.FluentMigrator",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model", "src\Migrations.Model\Migrations.Model.csproj", "{33AB9919-2A94-47B1-AA68-68B2F772C8EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model.Core", "src\Migrations.Model.Core\Migrations.Model.Core.csproj", "{45170B12-8653-458F-9769-FA8701C21CA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{DB4A6F3C-25CD-4C99-855F-9916ED764512}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,8 +43,16 @@ Global
 		{33AB9919-2A94-47B1-AA68-68B2F772C8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33AB9919-2A94-47B1-AA68-68B2F772C8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33AB9919-2A94-47B1-AA68-68B2F772C8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45170B12-8653-458F-9769-FA8701C21CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45170B12-8653-458F-9769-FA8701C21CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45170B12-8653-458F-9769-FA8701C21CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45170B12-8653-458F-9769-FA8701C21CA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33AB9919-2A94-47B1-AA68-68B2F772C8EF} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
+		{45170B12-8653-458F-9769-FA8701C21CA5} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
 	EndGlobalSection
 EndGlobal
