@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>Migrations.Model</AssemblyName>
+    <RootNamespace>Migrations.Model</RootNamespace>
+  </PropertyGroup>
+
+</Project>
