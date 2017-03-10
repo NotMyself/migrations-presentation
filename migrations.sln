@@ -5,13 +5,9 @@ VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.EF", "src\Migrations.EF\Migrations.EF.csproj", "{7979DD34-8CA7-489C-A162-B39C7D927879}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.EF.Core", "src\Migrations.EF.Core\Migrations.EF.Core.csproj", "{B565C02D-D1EC-4985-AA88-8D195451AD47}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.DbUp", "src\Migrations.DbUp\Migrations.DbUp.csproj", "{D34438FD-DE5D-4077-B28B-A33B1038A6F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.FluentMigrator", "src\Migrations.FluentMigrator\Migrations.FluentMigrator.csproj", "{5FF8B6AB-C51A-496A-BFC1-2FD83098B0F4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model.Core", "src\Migrations.Model.Core\Migrations.Model.Core.csproj", "{45170B12-8653-458F-9769-FA8701C21CA5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{DB4A6F3C-25CD-4C99-855F-9916ED764512}"
 EndProject
@@ -19,7 +15,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model", "src\Mig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model.Tests.Integration", "src\Migrations.Model.Tests.Integration\Migrations.Model.Tests.Integration.csproj", "{C1EE439E-7B86-4BB9-9B31-86778F082FA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model.Core.Tests.Integration", "src\Migrations.Model.Core.Tests.Integration\Migrations.Model.Core.Tests.Integration.csproj", "{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{A84E9317-BDAF-48B2-8482-4BB3E4292721}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE = LICENSE
+		NuGet.config = NuGet.config
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migrations.Model.Core", "src\Migrations.Model.Core\Migrations.Model.Core.csproj", "{FAFF2DCC-7219-426B-8348-FC286C1813E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C14A1C65-3B9C-4132-BF20-C88FC0AAA599}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migrations.EF.Core", "src\Migrations.EF.Core\Migrations.EF.Core.csproj", "{6EE5719D-9BA9-44CB-8D8C-C142ACFD1CA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migrations.Model.Core.Tests.Integration", "src\Migrations.Model.Core.Tests.Integration\Migrations.Model.Core.Tests.Integration.csproj", "{57178397-1013-447A-996E-BC24AD0467AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +42,6 @@ Global
 		{7979DD34-8CA7-489C-A162-B39C7D927879}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7979DD34-8CA7-489C-A162-B39C7D927879}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7979DD34-8CA7-489C-A162-B39C7D927879}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B565C02D-D1EC-4985-AA88-8D195451AD47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B565C02D-D1EC-4985-AA88-8D195451AD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B565C02D-D1EC-4985-AA88-8D195451AD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B565C02D-D1EC-4985-AA88-8D195451AD47}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D34438FD-DE5D-4077-B28B-A33B1038A6F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D34438FD-DE5D-4077-B28B-A33B1038A6F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D34438FD-DE5D-4077-B28B-A33B1038A6F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,10 +50,6 @@ Global
 		{5FF8B6AB-C51A-496A-BFC1-2FD83098B0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FF8B6AB-C51A-496A-BFC1-2FD83098B0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FF8B6AB-C51A-496A-BFC1-2FD83098B0F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{45170B12-8653-458F-9769-FA8701C21CA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45170B12-8653-458F-9769-FA8701C21CA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45170B12-8653-458F-9769-FA8701C21CA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45170B12-8653-458F-9769-FA8701C21CA5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,18 +58,26 @@ Global
 		{C1EE439E-7B86-4BB9-9B31-86778F082FA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1EE439E-7B86-4BB9-9B31-86778F082FA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1EE439E-7B86-4BB9-9B31-86778F082FA3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAFF2DCC-7219-426B-8348-FC286C1813E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAFF2DCC-7219-426B-8348-FC286C1813E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAFF2DCC-7219-426B-8348-FC286C1813E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFF2DCC-7219-426B-8348-FC286C1813E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EE5719D-9BA9-44CB-8D8C-C142ACFD1CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE5719D-9BA9-44CB-8D8C-C142ACFD1CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE5719D-9BA9-44CB-8D8C-C142ACFD1CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE5719D-9BA9-44CB-8D8C-C142ACFD1CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57178397-1013-447A-996E-BC24AD0467AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57178397-1013-447A-996E-BC24AD0467AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57178397-1013-447A-996E-BC24AD0467AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57178397-1013-447A-996E-BC24AD0467AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{45170B12-8653-458F-9769-FA8701C21CA5} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
 		{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
-		{C1EE439E-7B86-4BB9-9B31-86778F082FA3} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
-		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
+		{C1EE439E-7B86-4BB9-9B31-86778F082FA3} = {C14A1C65-3B9C-4132-BF20-C88FC0AAA599}
+		{FAFF2DCC-7219-426B-8348-FC286C1813E5} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
+		{57178397-1013-447A-996E-BC24AD0467AE} = {C14A1C65-3B9C-4132-BF20-C88FC0AAA599}
 	EndGlobalSection
 EndGlobal

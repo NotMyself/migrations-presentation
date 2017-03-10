@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Migrations.Model
+﻿namespace Migrations.Model
 {
+    using System;
+    using System.Collections.Generic;
 
     public class Customer
     {
@@ -50,6 +49,13 @@ namespace Migrations.Model
         Checking,
         Savings,
         Retirement
+    }
+
+    public class Ballance
+    {
+        public Account Account { get; set; }
+        public decimal Total { get; set; }
+        public DateTime LastUpdated { get; set; }
     }
 
 
