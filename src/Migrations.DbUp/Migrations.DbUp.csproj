@@ -32,7 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DbUp, Version=3.3.5.0, Culture=neutral, PublicKeyToken=4b419c53bdfd4cbf, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\dbup.3.3.5\lib\net35\DbUp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -47,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+    <EmbeddedResource Include="Scripts\Script0001 - Init.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Migrations.Model\Migrations.Model.csproj">

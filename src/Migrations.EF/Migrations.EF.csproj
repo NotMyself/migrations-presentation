@@ -63,10 +63,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Migrations.Model.Tests.Integration\App.config">
-      <Link>App.config</Link>
-    </None>
+    <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="readme.md" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703162241502_Init.resx">
