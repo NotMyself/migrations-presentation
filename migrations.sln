@@ -1,25 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.EF", "src\Migrations.EF\Migrations.EF.csproj", "{7979DD34-8CA7-489C-A162-B39C7D927879}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.EF.Core", "src\Migrations.EF.Core\Migrations.EF.Core.csproj", "{B565C02D-D1EC-4985-AA88-8D195451AD47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migrations.EF.Core", "src\Migrations.EF.Core\Migrations.EF.Core.csproj", "{B565C02D-D1EC-4985-AA88-8D195451AD47}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.DbUp", "src\Migrations.DbUp\Migrations.DbUp.csproj", "{D34438FD-DE5D-4077-B28B-A33B1038A6F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.FluentMigrator", "src\Migrations.FluentMigrator\Migrations.FluentMigrator.csproj", "{5FF8B6AB-C51A-496A-BFC1-2FD83098B0F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model.Core", "src\Migrations.Model.Core\Migrations.Model.Core.csproj", "{45170B12-8653-458F-9769-FA8701C21CA5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{DB4A6F3C-25CD-4C99-855F-9916ED764512}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migrations.Model.Core", "src\Migrations.Model.Core\Migrations.Model.Core.csproj", "{45170B12-8653-458F-9769-FA8701C21CA5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model", "src\Migrations.Model\Migrations.Model.csproj", "{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model.Tests.Integration", "src\Migrations.Model.Tests.Integration\Migrations.Model.Tests.Integration.csproj", "{C1EE439E-7B86-4BB9-9B31-86778F082FA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrations.Model.Core.Tests.Integration", "src\Migrations.Model.Core.Tests.Integration\Migrations.Model.Core.Tests.Integration.csproj", "{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migrations.Model.Core.Tests.Integration", "src\Migrations.Model.Core.Tests.Integration\Migrations.Model.Core.Tests.Integration.csproj", "{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{5A053262-DC4D-42E1-9BBC-0FF56273054A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET462", "NET462", "{104D0B73-68DF-4DA5-BF09-265B68DF635F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Flavors", "Flavors", "{BEFBECD1-E3A3-4990-AD9D-6D0807C38221}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,9 +68,14 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{45170B12-8653-458F-9769-FA8701C21CA5} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
-		{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
-		{C1EE439E-7B86-4BB9-9B31-86778F082FA3} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
-		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749} = {DB4A6F3C-25CD-4C99-855F-9916ED764512}
+		{7979DD34-8CA7-489C-A162-B39C7D927879} = {BEFBECD1-E3A3-4990-AD9D-6D0807C38221}
+		{B565C02D-D1EC-4985-AA88-8D195451AD47} = {5A053262-DC4D-42E1-9BBC-0FF56273054A}
+		{D34438FD-DE5D-4077-B28B-A33B1038A6F5} = {BEFBECD1-E3A3-4990-AD9D-6D0807C38221}
+		{5FF8B6AB-C51A-496A-BFC1-2FD83098B0F4} = {BEFBECD1-E3A3-4990-AD9D-6D0807C38221}
+		{45170B12-8653-458F-9769-FA8701C21CA5} = {5A053262-DC4D-42E1-9BBC-0FF56273054A}
+		{E0A3B39F-4C4B-4E88-BFAB-C493F6B83312} = {104D0B73-68DF-4DA5-BF09-265B68DF635F}
+		{C1EE439E-7B86-4BB9-9B31-86778F082FA3} = {104D0B73-68DF-4DA5-BF09-265B68DF635F}
+		{D62FF1BA-3515-45A7-B9F8-1DF99E4A8749} = {5A053262-DC4D-42E1-9BBC-0FF56273054A}
+		{BEFBECD1-E3A3-4990-AD9D-6D0807C38221} = {104D0B73-68DF-4DA5-BF09-265B68DF635F}
 	EndGlobalSection
 EndGlobal
