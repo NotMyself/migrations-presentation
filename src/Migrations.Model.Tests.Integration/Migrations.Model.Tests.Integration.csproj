@@ -61,7 +61,19 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="readme.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Migrations.EF\Migrations.EF.csproj">
+      <Project>{7979dd34-8ca7-489c-a162-b39c7d927879}</Project>
+      <Name>Migrations.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Migrations.Model\Migrations.Model.csproj">
+      <Project>{e0a3b39f-4c4b-4e88-bfab-c493f6b83312}</Project>
+      <Name>Migrations.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
