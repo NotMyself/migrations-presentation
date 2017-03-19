@@ -52,8 +52,6 @@ namespace Migrations.Model
         Retirement
     }
 
-
-
     public class Transaction
     {
         public Transaction()
