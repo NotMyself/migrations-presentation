@@ -32,3 +32,13 @@
 * **Consistency** - Some migration frameworks generate migrations based on conventions from your model code. These conventions are applied consistently accross the entire database. For example, a tables primary key will always be 'Id'. But if you wish, these conventions are overridable and applied universally. For example, you want your primary key to always be `EntityNameId` or your tables to always start with `TBL_Entityname`.
 
 * **Idempotence** - Migration frameworks will typically do "the right thing" when applying migrations. If a migration has been run once, it will not be run again.
+
+## Migrations in .NET
+
+* [FluentMigrator](src/Migrations.FluentMigrator/readme.md)
+
+* [Entity Framework Migrations](src/Migrations.EF/readme.md)
+
+* [Entity Framework Core Migrations](src/Migrations.EF.Core/readme.md)
+
+* [DbUp](src/Migrations.DbUp/readme.md)
