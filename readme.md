@@ -31,7 +31,7 @@
 
 * **Persistence Ignorance** - Migration frameworks frequently support multiple relational database vendors. A single set of migrations can be applied to Sql Server, Postgres and SQLite. Mature frameworks even support dialects like Sql Server 2014 vs 2016. This allows the framework to make good choices about syntax and features.
 
-* **Repeatibilty** - Migrations can be applied over and over again creating the exact same database. So they can be run in developmnet, test, uat and production with the exact same result.
+* **Repeatibilty** - Migrations can be applied over and over again creating the exact same database. So they can be run in development, test, uat and production with the exact same result.
 
 * **Consistency** - Some migration frameworks generate migrations based on conventions from your model code. These conventions are applied consistently accross the entire database. For example, a tables primary key will always be 'Id'. But if you wish, these conventions are overridable and applied universally. For example, you want your primary key to always be `EntityNameId` or your tables to always start with `TBL_Entityname`.
 
@@ -47,4 +47,4 @@
 
 * **[DbUp](src/Migrations.DbUp/readme.md)** - Super light weight migrations that can target anything ADO.NET can connect to and you can write sql scripts against. Very CI friendly. It is a good starting place for a team unfamiliar with migrations as a concept or teams starting with an existing database.
 
-**Note:** This list of far from exhaustive. There are tons of efforts like this in the .net space including [NHibernate Schema Export](http://stackoverflow.com/a/602822/303) and others.
+**Note:** This list of far from exhaustive as well, there are tons of efforts like this in the .net space including [NHibernate Schema Export](http://stackoverflow.com/a/602822/303) and others.
