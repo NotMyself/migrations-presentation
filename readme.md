@@ -48,3 +48,9 @@
 * **[DbUp](src/Migrations.DbUp/readme.md)** - Super light weight migrations that can target anything ADO.NET can connect to and you can write sql scripts against. Very CI friendly. It is a good starting place for a team unfamiliar with migrations as a concept or teams starting with an existing database.
 
 **Note:** This list of far from exhaustive as well, there are tons of efforts like this in the .net space including [NHibernate Schema Export](http://stackoverflow.com/a/602822/303) and others.
+
+## Recommended Reading
+
+I first became aware of migrations while involved with ALT.NET. The concepts described in the book [Domain-Driven Design](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/) by Eric Evans was very influential at the time. It deals with seperating the problem space you are attempting to create an application for away from concerns like UI and Data Storage. Allowing you to purely focus on the business domain and it's rules. The book is very indepth on the topic with tons of good advice.
+
+I suggest reading it for the `why?` of approaching applications in a code first point of view.
