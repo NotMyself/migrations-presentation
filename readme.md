@@ -25,6 +25,8 @@
 
 * **Database Versioning** - Migration frameworks typically keep a version table in a migrated database indicating the migration version applied to it. Making it easy to tell if your current codebase is compatible.
 
+* **Schema Versioning** - Migrations are typically commited to source control beside the code that depends on them. This makes it quite easy to branch and isolate your work or go back in time in the code and be able to run any version of your application.
+
 * **Downgrading** - Migration frameworks typically offer a method of downgrading to an earlier version of the schema. This makes it easy to push changes to a database at design time and remove them if the feature is rolled back.
 
 * **Persistence Ignorance** - Migration frameworks frequently support multiple relational database vendors. A single set of migrations can be applied to Sql Server, Postgres and SQLite. Mature frameworks even support dialects like Sql Server 2014 vs 2016. This allows the framework to make good choices about syntax and features.
