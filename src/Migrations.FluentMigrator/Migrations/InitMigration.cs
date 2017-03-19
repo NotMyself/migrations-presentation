@@ -1,17 +1,16 @@
-﻿using System;
-using FluentMigrator;
+﻿using FluentMigrator;
 
 namespace Migrations.FluentMigrator.Migrations
 {
     [Migration(1)]
     public class InitMigration : Migration
     {
-        public override void Down()
+        public override void Up()
         {
             
         }
 
-        public override void Up()
+        public override void Down()
         {
             
         }

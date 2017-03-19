@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using Migrations.Model;
+using System.Data.Entity;
 
 namespace Migrations.EF
 {
