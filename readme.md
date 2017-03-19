@@ -35,10 +35,10 @@
 
 ## Migrations in .NET
 
-* [FluentMigrator](src/Migrations.FluentMigrator/readme.md)
+* **[FluentMigrator](src/Migrations.FluentMigrator/readme.md)** - One of the first migration frameworks that I was aware of for .net. Migrations are code based and can be applied to a variety of relational databases. Very CI friendly as well.
 
-* [Entity Framework Migrations](src/Migrations.EF/readme.md)
+* **[Entity Framework Migrations](src/Migrations.EF/readme.md)** - The first official migrations framework built into the .net platform. Specific to Sql Server, but can be configured to target specific variants of it. Not very CI friendly.
 
-* [Entity Framework Core Migrations](src/Migrations.EF.Core/readme.md)
+* **[Entity Framework Core Migrations](src/Migrations.EF.Core/readme.md)** - Complete rewrite of EF that can be used cross platform. Able to target multiple relational databases. CLI is very CI friendly as well as scriptable.
 
-* [DbUp](src/Migrations.DbUp/readme.md)
+* **[DbUp](src/Migrations.DbUp/readme.md)** - Super light weight migrations that can target anything ADO.NET can connect to and you can write sql scripts against. Very CI friendly. It is a good starting place for a team unfamiliar with migrations as a concept or teams starting with an existing database.
