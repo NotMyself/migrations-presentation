@@ -19,6 +19,8 @@
 * [Migrate](https://github.com/mattes/migrate) - Go
 * [db-migrate](https://github.com/db-migrate/node-db-migrate) - Node.js
 
+**Note:** This list is far from exhaustive, pretty much every popular langage has at least one implementaiton of migrations. Others have several to choose from where one choice might be dependant on your selected data access pattern.
+
 ## Common Features of Migrations
 
 * **Database Versioning** - Migration frameworks typically keep a version table in a migrated database indicating the migration version applied to it. Making it easy to tell if your current codebase is compatible.
@@ -42,3 +44,5 @@
 * **[Entity Framework Core Migrations](src/Migrations.EF.Core/readme.md)** - Complete rewrite of EF that can be used cross platform. Able to target multiple relational databases. CLI is very CI friendly as well as scriptable.
 
 * **[DbUp](src/Migrations.DbUp/readme.md)** - Super light weight migrations that can target anything ADO.NET can connect to and you can write sql scripts against. Very CI friendly. It is a good starting place for a team unfamiliar with migrations as a concept or teams starting with an existing database.
+
+**Note:** This list of far from exhaustive. There are tons of efforts like this in the .net space including [NHibernate Schema Export](http://stackoverflow.com/a/602822/303) and others.
