@@ -16,6 +16,20 @@ Entity Framework is the current data access technology baked into .net. It is de
 Install-Package EntityFramework
 ```
 
+This is just a base class library, to interact with a database you must also install a package specific to that database.
+
+#### Sql Server
+
+```powershell
+Install-Package EntityFramework.SqlServer
+```
+
+#### Sql Server CE
+
+```powershell
+EntityFramework.SqlServerCompact
+```
+
 ### Example Migration
 
 ```csharp
