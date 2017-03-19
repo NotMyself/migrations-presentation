@@ -53,6 +53,22 @@
     <Compile Include="Migrations\201703162241502_Init.Designer.cs">
       <DependentUpon>201703162241502_Init.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703192027570_AddTransactions.cs" />
+    <Compile Include="Migrations\201703192027570_AddTransactions.Designer.cs">
+      <DependentUpon>201703192027570_AddTransactions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703192032440_AddAccounts.cs" />
+    <Compile Include="Migrations\201703192032440_AddAccounts.Designer.cs">
+      <DependentUpon>201703192032440_AddAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703192034202_AddClients.cs" />
+    <Compile Include="Migrations\201703192034202_AddClients.Designer.cs">
+      <DependentUpon>201703192034202_AddClients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703192036346_UpdateCustomersAddAccounts.cs" />
+    <Compile Include="Migrations\201703192036346_UpdateCustomersAddAccounts.Designer.cs">
+      <DependentUpon>201703192036346_UpdateCustomersAddAccounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,6 +86,18 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703162241502_Init.resx">
       <DependentUpon>201703162241502_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703192027570_AddTransactions.resx">
+      <DependentUpon>201703192027570_AddTransactions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703192032440_AddAccounts.resx">
+      <DependentUpon>201703192032440_AddAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703192034202_AddClients.resx">
+      <DependentUpon>201703192034202_AddClients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703192036346_UpdateCustomersAddAccounts.resx">
+      <DependentUpon>201703192036346_UpdateCustomersAddAccounts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
