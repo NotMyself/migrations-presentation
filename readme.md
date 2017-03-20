@@ -1,5 +1,7 @@
 # Database Migrations
 
+![Migrations](/docs/images/migration_wide.png?raw=true "Migraions")
+
 ## Why
 
 > Migrations are about evolutionary database design that rely on applying continuous
