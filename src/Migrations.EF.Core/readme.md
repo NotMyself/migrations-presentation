@@ -12,7 +12,7 @@ Entity Framework Core is the new data access technology baked into .net core. It
 ### Installation
 
 ```powershell
-Install-Package EntityFramework
+dotnet add .\src\Example.CLI\Example.CLI.csproj package Microsoft.EntityFrameworkCore
 ```
 
 This is just a base class library, to interact with a database you must also install a package specific to that database.
